@@ -1,6 +1,6 @@
 function calculateBusinessDays(date, businessDay) {
   const weekday = date.getDay();
-  var addDays = weekday >= 3 ? 2 + parseInt(businessDay) : parseInt(businessDay);
+  const addDays = weekday >= 3 ? 2 + parseInt(businessDay) : parseInt(businessDay);
   date.setDate(date.getDate() + addDays);
   return date;
 }
